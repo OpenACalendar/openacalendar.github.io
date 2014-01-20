@@ -4,3 +4,13 @@ title: Home
 ---
 
 <p>Coming Soon</p>
+
+<div id="home">
+  <ul id="blog" class="posts">
+    {% for post in site.posts limit:5 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}"><h4>{{ post.title }}</h4></a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+
