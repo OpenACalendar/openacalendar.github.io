@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link href="{{ site.baseurl }}/static/css/reset.css" rel="stylesheet" />
     <link href="{{ site.baseurl }}/static/css/main.css" rel="stylesheet" />
     <title>OpenACalendar - {{ page.title }}</title>
 	<meta name="viewport" content="initial-scale=1">
@@ -9,18 +10,35 @@
 
   <body>
 
-    <div id="wrapper">
-      <div id="headerwrapper"><div id="header">
-          <h1><a href="{{ site.baseurl }}/">OpenACalendar</a></h1>
-      </div></div>
 
-      <div id="content">{{ content }}</div>
 
-    </div>
+	<div id="headerwrapper">
+		<div id="header">
+			<h1><a href="{{ site.baseurl }}">OpenACalendar</a></h1>
+			<ul class="menu">
+				<li><a href="{{ site.baseurl }}/about.html">About</a></li>
+				<li><a href="{{ site.baseurl }}/news.html">News</a></li>
+				<li><a href="{{ site.baseurl }}/download.html">Download/Hosted</a></li>
+				<li><a href="{{ site.baseurl }}/docs/index.html">Docs</a></li>
+				<li><a href="{{ site.baseurl }}/support.html">Support</a></li>
+			</ul>
+		</div>
+	</div>
 
-    <div id="footerwrapper"><div id="footer">
+
+	<div id="bodywrapper">
+		<div id="body">
+			{{ content }}
+		</div>
+	</div>
+
+
+	<div id="footerwrapper">
+		<div id="footer">
 			&copy; <a href="http://jmbtechnology.co.uk/">JMB Technology Limited</a> 2013-2014.
+			<a href="{{ site.baseurl }}/license.html">License</a>
 			<a href="https://twitter.com/openacalendar">Follow us on Twitter</a>
-	</div></div>
+		</div>
+	</div>
   </body>
 </html>

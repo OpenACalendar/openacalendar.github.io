@@ -1,0 +1,14 @@
+---
+layout: default
+title: News
+---
+
+<h2>News</h2>
+
+<ul class="blogposts">
+  {% for post in site.posts limit:50 %}
+	<li><span class="date">{{ post.date | date_to_string }}</span> <a class="title" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+

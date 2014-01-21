@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="{{ site.baseurl }}/static/css/reset.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/static/css/main.css" rel="stylesheet" />
+    <title>OpenACalendar - {{ page.title }}</title>
+	<meta name="viewport" content="initial-scale=1">
+  </head>
+
+  <body>
+
+	<div id="headerbannerwrapper">
+		<div id="headerbanner">
+			<h1>OpenACalendar is an Open Source collaborative group wiki calendar, with strong Open Data tools baked in.</h1>
+		</div>
+	</div>
+
+
+	<div id="bodywrapper">
+		<div id="body">
+			{{ content }}
+			<ul class="homecontent">
+				<li><a href="about.html">Read more about the project</a></li>
+				<li><a href="news.html">Read the latest news on the blog</a></li>
+				<li><a href="download.html">Download a stable release</a></li>
+				<li><a href="docs/index.html">Read the docs</a></li>
+				<li><a href="support.html">Get community or commercial support</a></li>
+				<li><a href="http://ican.hasacalendar.co.uk">Let us host your calendar for you</a></li>
+				<li><a href="http://github.com/openacalendar">Browse the latest code on Github</a></li>
+			</ul>
+			
+			<ul class="blogposts">
+				{% for post in site.posts limit:5 %}
+					<li><span class="date">{{ post.date | date_to_string }}</span> <a class="title" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+
+			
+		</div>
+	</div>
+
+
+	<div id="footerwrapper">
+		<div id="footer">
+			&copy; <a href="http://jmbtechnology.co.uk/">JMB Technology Limited</a> 2013-2014.
+			<a href="license.html">License</a>
+			<a href="https://twitter.com/openacalendar">Follow us on Twitter</a>
+		</div>
+	</div>
+
+  </body>
+</html>
