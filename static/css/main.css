@@ -1,41 +1,53 @@
 html {
-	background: #aaa;	
-	font-size: 16pt;
-	font-family: arial, sans-serif;
+	background: #0da20d;	
+	font-size: 14pt;
 }
 
 #headerbannerwrapper {
-	background: #aaa;
-	border-bottom: #ddd 2px solid;
+	background: #0da20d;
+	border-bottom: #075007 2px solid;
 }
 
 #headerbanner {
 	padding: 30px 10px;
 	max-width: 1000px;
 	margin: 0 auto;
+	font-family: arial, sans-serif;
 }
 
 #headerbanner h1 {
-	font-size: 1.4em;
+	font-size: 1.6em;
 	line-height: 1.5;
+	font-weight: bold;
 }
 
-
 #headerwrapper {
-	background: #aaa;
-	border-bottom: #ddd 2px solid;
+	background: #0da20d;
+	border-bottom: #075007 2px solid;
 }
 
 #header {
 	padding: 10px;
 	max-width: 1000px;
 	margin: 0 auto;
+	font-family: arial, sans-serif;
 }
 
 #header h1 {
 	display: inline;
-	font-size: 1.3em;
+	font-size: 1.5em;
+	font-weight: bold;
 }
+
+#header a {
+	color: black;
+	text-decoration: none;
+}
+
+#header a:hover {
+	text-decoration: underline;
+}
+
 
 #header ul.menu {
 	display: inline;
@@ -44,57 +56,83 @@ html {
 
 #header ul.menu li {
 	display: inline;
-	font-size: 1.1em;
+	font-size: 1.3em;
+	padding: 0px 5px;
 }
 
 #bodywrapper {
 	min-height: 300px;
-	background: #ccc;
+	background: #b7cfb7;
 }
 
 #body {	
 	padding: 10px;
 	max-width: 1000px;
 	margin: 0 auto;
+	font-family: serif;
 }
 
-h2 {
+#body h2 {
 	font-size: 1.1em;
 	font-weight: bold;
 	padding: 10px 0 5px 0;
+	font-family: arial, sans-serif;
 }
 
-p {
+#body p {
 	padding: 5px 0 5px 0;
+	line-height: 1.1;
 }
 
-ul.docslist li {
+#body a {
+	color: black;
 }
 
-ul.blogposts .date {
+#body ul.docslist li {
+}
+
+#body ul.blogposts .date {
 	font-size: 0.8em;
 }
 
-ul.homecontent { 
+#body ul.homecontent { 
 	padding: 10px 0 30px 0;
 }
 
-ul.homecontent li {
+#body ul.homecontent li {
 	padding: 10px 0;
 	font-size: 1.2em;
 }
 
-.postdetails {
+#body ul.homecontent li a {
+	color: black;
+	font-style: italic;
+	text-decoration: none;
+}
+#body ul.homecontent li a:hover {
+	font-style: normal;
+	text-decoration: underline;
+}
+
+
+#body ul.blogposts li a {
+	color: black;
+	text-decoration: none;
+}
+#body ul.blogposts li a:hover {
+	text-decoration: underline;
+}
+
+#body .postdetails {
 	font-size: 0.8em;
 }
 
-.postbody {
+#body .postbody {
 	padding: 20px 0 20px 0;
 }
 
 #footerwrapper {
-	background: #aaa;
-	border-top: #ddd 2px solid;
+	background: #0da20d;
 }
 
 #footer {
@@ -102,4 +140,10 @@ ul.homecontent li {
 	max-width: 1000px;
 	margin: 0 auto;
 	font-size: 0.7em;
+	font-family: arial, sans-serif;
 }
+
+#footer a {
+	color: black;
+}
+
