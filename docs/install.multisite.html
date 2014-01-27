@@ -1,0 +1,30 @@
+---
+layout: default
+title: Install Multi Site Mode
+---
+
+
+<h2>Install Multi Site Mode</h2>
+
+<p>Get the code and place on a web server.</p>
+<p>Set up a Postgres database.</p>
+<p>Copy config.dist.php to config.php and edit.</p>
+<p>Run the PHP script "extension.Core/cli/upgradeDatabase.php".</p>
+<p>Run the PHP script "extension.Core/cli/loadStaticData.php".</p>
+<p>Run the PHP script "extension.Core/cli/createUser.php USERNAME EMAIL PASSWORD sysadmin" 
+	to create your first user.</p>
+<p>Create the demo calendar. Run the PHP script "extension.Core/cli/createSite.php SLUG EMAIL" 
+	where slug was set in your config.</p>
+<p>The folder "webIndex" must be served by the webserver, on a single name (eg "www.example.com"). Enable SSL if possible.</p>
+<p>The folder "webSysadmin" must be served by the webserver, on a single name (eg "sysadmin.example.com"). Ideally, only serve this over SSL.</p>
+<p>The folder "webSite" must be served by the webserver, on a name that allows any 
+	subdomain to reach it (eg "*.example.com"). Enable SSL if possible.</p>
+<p>Note you may have to be careful about the order of the apache virtual hosts to 
+	make sure that the  "webSite" folder does not get requests intended for the "webIndex" or 
+	"webSysAdmin" folders.</p>
+<p>The folder "cache" must be writable be the webserver.</p>
+<p>Enable some vital cron jobs. Please see <a href="cron.html">the cron page</a> for more details.</p>
+
+
+
+
