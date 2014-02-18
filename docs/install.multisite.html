@@ -15,10 +15,13 @@ title: Install Multi Site Mode
 	to create your first user.</p>
 <p>Create the demo calendar. Run the PHP script "extension.Core/cli/createSite.php SLUG EMAIL" 
 	where slug was set in your config.</p>
-<p>The folder "webIndex" must be served by the webserver, on a single name (eg "www.example.com"). Enable SSL if possible.</p>
-<p>The folder "webSysadmin" must be served by the webserver, on a single name (eg "sysadmin.example.com"). Ideally, only serve this over SSL.</p>
+<p>The folder "webIndex" must be served by the webserver, on a single name (eg "www.example.com"). 
+	Enable SSL if possible. Note there is an .htaccess file in there that Apache must use.</p>
+<p>The folder "webSysadmin" must be served by the webserver, on a single name (eg "sysadmin.example.com"). 
+	Ideally, only serve this over SSL. Note there is an .htaccess file in there that Apache must use.</p>
 <p>The folder "webSite" must be served by the webserver, on a name that allows any 
-	subdomain to reach it (eg "*.example.com"). Enable SSL if possible.</p>
+	subdomain to reach it (eg "*.example.com"). Enable SSL if possible. 
+	Note there is an .htaccess file in there that Apache must use.</p>
 <p>Note you may have to be careful about the order of the apache virtual hosts to 
 	make sure that the  "webSite" folder does not get requests intended for the "webIndex" or 
 	"webSysAdmin" folders.</p>
