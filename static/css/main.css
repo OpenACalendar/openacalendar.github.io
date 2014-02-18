@@ -170,3 +170,15 @@ dl dd {
 	font-size: 0.8em;
 }
 
+
+table.releases th{
+	border: 1px black solid;
+	padding: 3px 5px;
+	font-weight: bold;
+}
+
+table.releases td{
+	border: 1px black dashed;
+	padding: 3px 5px;
+}
+
