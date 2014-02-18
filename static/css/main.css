@@ -79,6 +79,13 @@ html {
 	font-family: arial, sans-serif;
 }
 
+#body h3 {
+	font-size: 1.0em;
+	font-weight: bold;
+	padding: 10px 0 5px 0;
+	font-family: arial, sans-serif;
+}
+
 #body p {
 	padding: 5px 0 5px 0;
 	line-height: 1.1;
@@ -145,5 +152,21 @@ html {
 
 #footer a {
 	color: black;
+}
+
+dl {
+	padding: 20px 0;
+}
+
+dl dt {
+	display: block;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+dl dd {
+	display: block;
+	padding: 5px 5px 5px 20px;
+	font-size: 0.8em;
 }
 

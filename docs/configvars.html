@@ -1,0 +1,234 @@
+---
+layout: default
+title: Config Variables
+---
+
+<h2>Config Variables</h2>
+
+<p>To see what default options are set, <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/blob/master/extension.Core/php/Config.php">see this file</a>.</p>
+
+<h3>Database</h3>
+
+<dl>
+	<dt><dfn>databaseType</dfn></dt>
+	<dd>"pgsql" is the only current option.</dd>
+	<dt><dfn>databaseName</dfn></dt>
+	<dd></dd>
+	<dt><dfn>databaseHost</dfn></dt>
+	<dd></dd>
+	<dt><dfn>databaseUser</dfn></dt>
+	<dd></dd>
+	<dt><dfn>databasePassword</dfn></dt>
+	<dd></dd>
+</dl>
+
+<h3>Site Mode</h3>
+
+<dl>
+	<dt><dfn>isSingleSiteMode</dfn></dt>
+	<dd>Boolean.</dd>
+	<dt><dfn>singleSiteID</dfn></dt>
+	<dd>If single site mode, put the ID of the site to use here. If you have created the DB from scratch this should be 1.</dd>
+	<dt><dfn>siteSlugReserved</dfn></dt>
+	<dd>Array. If Multi site mode, users will not be allowed to create sites with these slugs.</dd>
+	<dt><dfn>siteSlugDemoSite</dfn></dt>
+	<dd>If Multi site mode, this site is a "demo" site that users are directed to as a playbox.</dd>
+</dl>
+
+<h3>Web Addresses</h3>
+
+<p>Index, Site and Sysadmin need to be different in multi site mode. In single site mode, just set each one to be the same.</p>
+
+<p>Each domain should not include the protocol, eg "example.com" not "http://example.com"</p>
+
+<p>Each domain can include a port number, eg "example.com:1234". This is most useful on dev servers.</p>
+
+<dl>
+	<dt><dfn>webIndexDomain</dfn></dt>
+	<dd></dd>
+	<dt><dfn>webSiteDomain</dfn></dt>
+	<dd></dd>
+	<dt><dfn>webSysAdminDomain</dfn></dt>
+	<dd></dd>
+	<dt><dfn>hasSSL</dfn></dt>
+	<dd>Boolean</dd>
+	<dt><dfn>webIndexDomainSSL</dfn></dt>
+	<dd></dd>
+	<dt><dfn>webSiteDomainSSL</dfn></dt>
+	<dd></dd>
+	<dt><dfn>webSysAdminDomainSSL</dfn></dt>
+	<dd></dd>
+	<dt><dfn>webSiteAlternateDomains</dfn></dt>
+	<dd>Array. This are other domains that the site will recognise and redirect to.</dd>
+	<dt><dfn>webCommonSessionDomain</dfn></dt>
+	<dd>This is the session for the cookie. In single site mode, just set the same domain. 
+		In multi site mode, it needs to go across all domains so set a common parent.</dd>
+</dl>
+
+<h3>Site State</h3>
+
+<dl>
+	<dt><dfn>isDebug</dfn></dt>
+	<dd>Boolean, is site in debug mode.</dd>
+	<dt><dfn>siteReadOnly</dfn></dt>
+	<dd></dd>
+	<dt><dfn>siteReadOnlyReason</dfn></dt>
+	<dd></dd>
+</dl>
+
+<h3>Site identity and contact details</h3>
+
+<dl>
+	<dt><dfn>siteTitle</dfn></dt>
+	<dd></dd>
+	<dt><dfn>emailFrom</dfn></dt>
+	<dd></dd>
+	<dt><dfn>emailFromName</dfn></dt>
+	<dd></dd>
+	<dt><dfn>contactTwitter</dfn></dt>
+	<dd></dd>
+	<dt><dfn>contactEmail</dfn></dt>
+	<dd></dd>
+	<dt><dfn>contactEmailHTML</dfn></dt>
+	<dd></dd>
+	<dt><dfn>facebookPage</dfn></dt>
+	<dd></dd>
+	<dt><dfn>googlePlusPage</dfn></dt>
+	<dd></dd>
+	<dt><dfn>ourBlog</dfn></dt>
+	<dd></dd>	
+</dl>
+
+<h3>Media</h3>
+
+<dl>
+	<dt><dfn>fileStoreLocation</dfn></dt>
+	<dd></dd>
+	<dt><dfn>mediaNormalSize</dfn></dt>
+	<dd></dd>
+	<dt><dfn>mediaThumbnailSize</dfn></dt>
+	<dd></dd>
+	<dt><dfn>mediaQualityJpeg</dfn></dt>
+	<dd></dd>
+	<dt><dfn>mediaQualityPng</dfn></dt>
+	<dd></dd>
+	<dt><dfn>mediaBrowserCacheExpiresInseconds</dfn></dt>
+	<dd></dd>
+	<dt><dfn>cacheSiteLogoInSeconds</dfn></dt>
+	<dd></dd>	
+</dl>
+
+<h3>New Sites</h3>
+
+<dl>
+	<dt><dfn>newSiteHasFeatureMap</dfn></dt>
+	<dd>Boolean</dd>
+	<dt><dfn>newSiteHasFeatureCuratedList</dfn></dt>
+	<dd>Boolean</dd>
+	<dt><dfn>newSiteHasFeatureImporter</dfn></dt>
+	<dd>Boolean</dd>
+	<dt><dfn>newSiteHasFeatureGroup</dfn></dt>
+	<dd>Boolean</dd>
+	<dt><dfn>newSiteHasFeatureVirtualEvents</dfn></dt>
+	<dd>Boolean</dd>
+	<dt><dfn>newSiteHasFeaturePhysicalEvents</dfn></dt>
+	<dd>Boolean</dd>
+	<dt><dfn>newSitePromptEmailsDaysInAdvance</dfn></dt>
+	<dd>Boolean</dd>
+	<dt><dfn>newSiteHasQuotaCode</dfn></dt>
+	<dd>This should be a Quota level you have set up in the sys admin interface. "BASIC" is configured by default.</dd>	
+</dl>
+
+<h3>Misc</h3>
+
+<dl>
+	<dt><dfn>bcryptRounds</dfn></dt>
+	<dd></dd>
+	
+	<dt><dfn>cacheFeedsInSeconds</dfn></dt>
+	<dd></dd>
+	<dt><dfn>clockDisplayDefault</dfn></dt>
+	<dd></dd>
+	<dt><dfn>assetsVersion</dfn></dt>
+	<dd></dd>
+	<dt><dfn>eventsCantBeMoreThanYearsInFuture</dfn></dt>
+	<dd></dd>
+	<dt><dfn>eventsCantBeMoreThanYearsInPast</dfn></dt>
+	<dd></dd>
+	<dt><dfn>calendarEarliestYearAllowed</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sysAdminLogInTimeOutSeconds</dfn></dt>
+	<dd></dd>
+	<dt><dfn>allowNewUsersToRegister</dfn></dt>
+	<dd></dd>
+	<dt><dfn>newUsersAreEditors</dfn></dt>
+	<dd></dd>
+	<dt><dfn>userAccountVerificationSecondsBetweenAllowedSends</dfn></dt>
+	<dd></dd>
+	<dt><dfn>piwikServerHTTP</dfn></dt>
+	<dd></dd>
+	<dt><dfn>piwikServerHTTPS</dfn></dt>
+	<dd></dd>
+	<dt><dfn>piwikSiteID</dfn></dt>
+	<dd></dd>
+
+	<dt><dfn>tmpFileCacheLocation</dfn></dt>
+	<dd></dd>
+	<dt><dfn>tmpFileCacheCreationPermissions</dfn></dt>
+	<dd></dd>
+	<dt><dfn>logFile</dfn></dt>
+	<dd></dd>
+	<dt><dfn>logFileParseDateTimeRange</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sysAdminExtraPassword</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sysAdminTimeZone</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sessionLastsInSeconds</dfn></dt>
+	<dd></dd>
+	<dt><dfn>resetEmailsGapBetweenInSeconds</dfn></dt>
+	<dd></dd>
+	<dt><dfn>userWatchesGroupPromptEmailShowEvents</dfn></dt>
+	<dd></dd>
+	<dt><dfn>userWatchesSitePromptEmailShowEvents</dfn></dt>
+	<dd></dd>
+	<dt><dfn>userWatchesSiteGroupPromptEmailShowEvents</dfn></dt>
+	<dd></dd>
+	<dt><dfn>userWatchesPromptEmailSafeGapDays</dfn></dt>
+	<dd></dd>
+	<dt><dfn>newUserRegisterAntiSpam</dfn></dt>
+	<dd></dd>
+	<dt><dfn>importURLExpireSecondsAfterLastEdit</dfn></dt>
+	<dd></dd>
+	<dt><dfn>importURLSecondsBetweenImports</dfn></dt>
+	<dd></dd>
+	<dt><dfn>importURLAllowEventsSecondsIntoFuture</dfn></dt>
+	<dd></dd>
+	<dt><dfn>upcomingEventsForUserEmailTextListsEvents</dfn></dt>
+	<dd></dd>
+	<dt><dfn>upcomingEventsForUserEmailHTMLListsEvents</dfn></dt>
+	<dd></dd>
+	<dt><dfn>siteSeenCookieStoreForDays</dfn></dt>
+	<dd></dd>
+	<dt><dfn>extensions</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sponsor1MightExist</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sponsor1Text</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sponsor1Html</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sponsor1Link</dfn></dt>
+	<dd></dd>
+	<dt><dfn>sponsor1Image</dfn></dt>
+	<dd></dd>
+	<dt><dfn>apiExtraHeader1Html</dfn></dt>
+	<dd></dd>
+	<dt><dfn>apiExtraHeader1Text</dfn></dt>
+	<dd></dd>
+	
+</dl>
+
+
+
+
