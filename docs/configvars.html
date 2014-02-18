@@ -59,7 +59,7 @@ title: Config Variables
 	<dt><dfn>webSysAdminDomainSSL</dfn></dt>
 	<dd></dd>
 	<dt><dfn>webSiteAlternateDomains</dfn></dt>
-	<dd>Array. This are other domains that the site will recognise and redirect to.</dd>
+	<dd>Array. These are other domains that the site will recognise and redirect to.</dd>
 	<dt><dfn>webCommonSessionDomain</dfn></dt>
 	<dd>This is the session for the cookie. In single site mode, just set the same domain. 
 		In multi site mode, it needs to go across all domains so set a common parent.</dd>
@@ -71,9 +71,11 @@ title: Config Variables
 	<dt><dfn>isDebug</dfn></dt>
 	<dd>Boolean, is site in debug mode.</dd>
 	<dt><dfn>siteReadOnly</dfn></dt>
-	<dd></dd>
+	<dd>Boolean. Can lock whole site during upgrades, maintenance, etc.</dd>
 	<dt><dfn>siteReadOnlyReason</dfn></dt>
-	<dd></dd>
+	<dd>String. Shown to user.</dd>
+	<dt><dfn>extensions</dfn></dt>
+	<dd>Array. List of extensions active.</dd>
 </dl>
 
 <h3>Site identity and contact details</h3>
@@ -82,15 +84,15 @@ title: Config Variables
 	<dt><dfn>siteTitle</dfn></dt>
 	<dd></dd>
 	<dt><dfn>emailFrom</dfn></dt>
-	<dd></dd>
+	<dd>Email address</dd>
 	<dt><dfn>emailFromName</dfn></dt>
-	<dd></dd>
+	<dd>Name that is shown with email address</dd>
 	<dt><dfn>contactTwitter</dfn></dt>
-	<dd></dd>
+	<dd>Username only.</dd>
 	<dt><dfn>contactEmail</dfn></dt>
-	<dd></dd>
+	<dd>Email address.</dd>
 	<dt><dfn>contactEmailHTML</dfn></dt>
-	<dd></dd>
+	<dd>This is the address that is show on the web page. You may wish to do something so spam bots find it harder to scan.</dd>
 	<dt><dfn>facebookPage</dfn></dt>
 	<dd></dd>
 	<dt><dfn>googlePlusPage</dfn></dt>
@@ -101,24 +103,66 @@ title: Config Variables
 
 <h3>Media</h3>
 
+<p>Media is uploaded pictures.</p>
+
 <dl>
 	<dt><dfn>fileStoreLocation</dfn></dt>
-	<dd></dd>
+	<dd>Location of file store. This should be backed up.</dd>
 	<dt><dfn>mediaNormalSize</dfn></dt>
-	<dd></dd>
+	<dd>Number. Size in pixels.</dd>
 	<dt><dfn>mediaThumbnailSize</dfn></dt>
-	<dd></dd>
+	<dd>Number. Size in pixels.</dd>
 	<dt><dfn>mediaQualityJpeg</dfn></dt>
-	<dd></dd>
+	<dd>Number.</dd>
 	<dt><dfn>mediaQualityPng</dfn></dt>
-	<dd></dd>
+	<dd>Number.</dd>
 	<dt><dfn>mediaBrowserCacheExpiresInseconds</dfn></dt>
-	<dd></dd>
+	<dd>Number.</dd>
 	<dt><dfn>cacheSiteLogoInSeconds</dfn></dt>
-	<dd></dd>	
+	<dd>Number. For sites in multi site mode, they can specify that a piece of media is their logo. How long to cache it?</dd>	
 </dl>
 
+<h3>Security and Antispam</h3>
+
+<dl>
+	<dt><dfn>allowNewUsersToRegister</dfn></dt>
+	<dd>Boolean.</dd>
+	<dt><dfn>newUsersAreEditors</dfn></dt>
+	<dd>Boolean.</dd>	
+	<dt><dfn>bcryptRounds</dfn></dt>
+	<dd>Number.</dd>
+	<dt><dfn>newUserRegisterAntiSpam</dfn></dt>
+	<dd>Boolean.</dd>
+	<dt><dfn>contactFormAntiSpam</dfn></dt>
+	<dd>Boolean.</dd>
+</dl>
+
+<h3>Sys admin interface</h3>
+
+<dl>
+	<dt><dfn>sysAdminExtraPassword</dfn></dt>
+	<dd>Sys admin users have to enter an extra password to access the sys admin interface. 
+		Set here as a plain text string.</dd>
+	<dt><dfn>sysAdminTimeZone</dfn></dt>
+	<dd>Time Zone used when browsing the Sys Admin interface.</dd>
+	<dt><dfn>sysAdminLogInTimeOutSeconds</dfn></dt>
+	<dd>Number.</dd>
+</dl>
+
+<h3>Analytics</h3>
+
+<dl>
+	<dt><dfn>piwikServerHTTP</dfn></dt>
+	<dd></dd>
+	<dt><dfn>piwikServerHTTPS</dfn></dt>
+	<dd></dd>
+	<dt><dfn>piwikSiteID</dfn></dt>
+	<dd></dd>
+<dl>
+	
 <h3>New Sites</h3>
+
+<p>When you create a site, what features are on by default? Most of these can be changed later in calendar admin.</p>
 
 <dl>
 	<dt><dfn>newSiteHasFeatureMap</dfn></dt>
@@ -134,44 +178,31 @@ title: Config Variables
 	<dt><dfn>newSiteHasFeaturePhysicalEvents</dfn></dt>
 	<dd>Boolean</dd>
 	<dt><dfn>newSitePromptEmailsDaysInAdvance</dfn></dt>
-	<dd>Boolean</dd>
+	<dd>Number</dd>
 	<dt><dfn>newSiteHasQuotaCode</dfn></dt>
-	<dd>This should be a Quota level you have set up in the sys admin interface. "BASIC" is configured by default.</dd>	
+	<dd>This should be a Quota level you have already set up in the sys admin interface. "BASIC" is configured by default.</dd>	
 </dl>
 
+	
 <h3>Misc</h3>
 
 <dl>
-	<dt><dfn>bcryptRounds</dfn></dt>
-	<dd></dd>
-	
 	<dt><dfn>cacheFeedsInSeconds</dfn></dt>
 	<dd></dd>
 	<dt><dfn>clockDisplayDefault</dfn></dt>
-	<dd></dd>
+	<dd>"12hr" or "24hr".</dd>
 	<dt><dfn>assetsVersion</dfn></dt>
-	<dd></dd>
+	<dd>All assets (CSS, Images, Js, etc) have this appended to the URL. You can tell 
+		browsers to cache all assets, and increment this when you update assets to make 
+		sure browsers get the latest ones.</dd>
 	<dt><dfn>eventsCantBeMoreThanYearsInFuture</dfn></dt>
 	<dd></dd>
 	<dt><dfn>eventsCantBeMoreThanYearsInPast</dfn></dt>
 	<dd></dd>
 	<dt><dfn>calendarEarliestYearAllowed</dfn></dt>
 	<dd></dd>
-	<dt><dfn>sysAdminLogInTimeOutSeconds</dfn></dt>
-	<dd></dd>
-	<dt><dfn>allowNewUsersToRegister</dfn></dt>
-	<dd></dd>
-	<dt><dfn>newUsersAreEditors</dfn></dt>
-	<dd></dd>
 	<dt><dfn>userAccountVerificationSecondsBetweenAllowedSends</dfn></dt>
 	<dd></dd>
-	<dt><dfn>piwikServerHTTP</dfn></dt>
-	<dd></dd>
-	<dt><dfn>piwikServerHTTPS</dfn></dt>
-	<dd></dd>
-	<dt><dfn>piwikSiteID</dfn></dt>
-	<dd></dd>
-
 	<dt><dfn>tmpFileCacheLocation</dfn></dt>
 	<dd></dd>
 	<dt><dfn>tmpFileCacheCreationPermissions</dfn></dt>
@@ -179,10 +210,6 @@ title: Config Variables
 	<dt><dfn>logFile</dfn></dt>
 	<dd></dd>
 	<dt><dfn>logFileParseDateTimeRange</dfn></dt>
-	<dd></dd>
-	<dt><dfn>sysAdminExtraPassword</dfn></dt>
-	<dd></dd>
-	<dt><dfn>sysAdminTimeZone</dfn></dt>
 	<dd></dd>
 	<dt><dfn>sessionLastsInSeconds</dfn></dt>
 	<dd></dd>
@@ -196,8 +223,6 @@ title: Config Variables
 	<dd></dd>
 	<dt><dfn>userWatchesPromptEmailSafeGapDays</dfn></dt>
 	<dd></dd>
-	<dt><dfn>newUserRegisterAntiSpam</dfn></dt>
-	<dd></dd>
 	<dt><dfn>importURLExpireSecondsAfterLastEdit</dfn></dt>
 	<dd></dd>
 	<dt><dfn>importURLSecondsBetweenImports</dfn></dt>
@@ -209,8 +234,6 @@ title: Config Variables
 	<dt><dfn>upcomingEventsForUserEmailHTMLListsEvents</dfn></dt>
 	<dd></dd>
 	<dt><dfn>siteSeenCookieStoreForDays</dfn></dt>
-	<dd></dd>
-	<dt><dfn>extensions</dfn></dt>
 	<dd></dd>
 	<dt><dfn>sponsor1MightExist</dfn></dt>
 	<dd></dd>
