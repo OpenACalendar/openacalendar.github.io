@@ -9,52 +9,86 @@ title: Cron
 
 <p>The folder "cache/templates.cli" must be writable be the user Cron jobs run as.</p>
 
+<p>For all scripts, make sure more than one of the same script is not running at 
+	the same time as then you may get race conditions. Sometimes this will not matter, sometimes it will.
+	If you have a large site you will want to increase the intervals to ensure this.</p>
+
 <h2>runImportURL.php</h2>
 
 <p>This imports data from other URLs. If you have this feature turned off, you can ignore this.</p>
 
+<p>Recommended interval: every hour.</p>
+
 <h2>sendUpcomingEventsForUser.php</h2>
 
 <p>This should only be run once per day.</p>
-	
+
+<p>Recommended interval: Once per day only. </p>
+
 
 <h2>sendUserWatchesGroupNotifyEmails.php</h2>
 
 <p></p>
-	
+
+<p>Recommended interval:  every hour.</p>
+
 
 <h2>sendUserWatchesGroupPromptEmails.php</h2>
 
 <p></p>
+
+<p>Recommended interval:  every hour.</p>
+
 	
 
 <h2>sendUserWatchesSiteGroupPromptEmails.php</h2>
 
 <p></p>
+
+<p>Recommended interval:  every hour.</p>
+
 	
 
 <h2>sendUserWatchesSiteNotifyEmails.php</h2>
 
 <p></p>
+
+<p>Recommended interval:  every hour.</p>
+
 	
 
 <h2>sendUserWatchesSitePromptEmails.php</h2>
 
 <p></p>
 
+<p>Recommended interval:  every hour.</p>
+
+
 <h2>updateAreaBoundsCache.php</h2>
 
 <p></p>
+
+<p>Recommended interval:  every hour.</p>
+
 
 <h2>updateAreaFutureEventsCache.php</h2>
 
 <p></p>
 
+<p>Recommended interval:  every hour.</p>
+
+
 <h2>updateAreaParentCache.php</h2>
 
 <p></p>
 
+<p>Recommended interval:  every hour.</p>
+
+
 <h2>updateSiteCache.php</h2>
 
 <p></p>
+
+<p>Recommended interval:  every hour.</p>
+
 	
