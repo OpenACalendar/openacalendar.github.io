@@ -1,0 +1,9 @@
+---
+layout: post
+title: Version 1.0.1 released
+slug: version-1-0-1
+created: 2014-02-20 08:23:00
+---
+
+
+New release with minor bugfixes and improvements, version 1.0.1! [notes](/release/1.0.1.html).
