@@ -1,2 +1,2 @@
-baseurl: http://ican.openacalendar.org
+baseurl: file:///home/james/openacalendar.github.io/_site
 markdown: rdiscount
