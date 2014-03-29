@@ -9,11 +9,11 @@ title: Install Multi Site Mode
 <p>Get the code and place on a web server.</p>
 <p>Set up a Postgres database.</p>
 <p>Copy config.dist.php to config.php and <a href="configvars.html">edit it using this guide</a>.</p>
-<p>Run the PHP script "extension.Core/cli/upgradeDatabase.php".</p>
-<p>Run the PHP script "extension.Core/cli/loadStaticData.php".</p>
-<p>Run the PHP script "extension.Core/cli/createUser.php USERNAME EMAIL PASSWORD sysadmin" 
+<p>Run the PHP script "core/cli/upgradeDatabase.php".</p>
+<p>Run the PHP script "core/cli/loadStaticData.php".</p>
+<p>Run the PHP script "core/cli/createUser.php USERNAME EMAIL PASSWORD sysadmin" 
 	to create your first user.</p>
-<p>Create the demo calendar. Run the PHP script "extension.Core/cli/createSite.php SLUG EMAIL" 
+<p>Create the demo calendar. Run the PHP script "core/cli/createSite.php SLUG EMAIL" 
 	where slug was set in your config.</p>
 <p>The folder "webIndex" must be served by the webserver, on a single name (eg "www.example.com"). 
 	Enable SSL if possible. Note there is an .htaccess file in there that Apache must use.</p>
