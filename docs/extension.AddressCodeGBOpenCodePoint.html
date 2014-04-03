@@ -3,37 +3,4 @@ layout: default
 title: Extension - Post Codes from Open Code Point
 ---
 
-<h2>Extension: Post Codes from Open Code Point</h2>
-
-<h3>Purpose</h3>
-
-<p>If a venue is saved with a post code but no lat/lng point, a lat/lng point will be set. 
-This uses free data from <a href="http://www.ordnancesurvey.co.uk/business-and-government/products/code-point-open.html">Code-Point Open</a>.</p>
-
-<h3>Version Compatability</h3>
-
-<p>Usable from version 1.1.0 upwards</p>
-
-<h3>Installation</h3>
-
-<p>This extension is included with the core software since version 1.1.0 and only needs to be set up.</p>
-
-<h3>Setting up</h3>
-
-<p>Download the <a href="http://www.ordnancesurvey.co.uk/business-and-government/products/code-point-open.html">Code-Point Open files</a>. Extract them to the server.</p>
-
-<p>Run this command. The last location should be the folder that contains the CSV files you just extracted.</p>
-
-<p>php extension/AddressCodeGBOpenCodePoint/cli/loadData.php /home/james/OpenCodePoint/Data/CSV/</p>
-
-<p>This will create a whole bunch of new CSV files in the folder extension/AddressCodeGBOpenCodePoint/data/ - these contain just the information we need.</p>
-
-<p>(Note you can re-run this step any time there is a new version of the Code-Point Open files to download. 
-The files generated in extension/AddressCodeGBOpenCodePoint/data/ are portable - you can generate them on a dev machine and just copy them to the server.)</p>
-
-<p>Finally, edit your config.php and add AddressCodeGBOpenCodePoint as an extension.</p>
-
-<h3>Useage</h3>
-
-<p>If set up properly, it will just work.</p>
-
+<a href="http://docs.openacalendar.org/en/master/serveradministrators/extension.AddressCodeGBOpenCodePoint/installation.html">Moved to new site</a>
