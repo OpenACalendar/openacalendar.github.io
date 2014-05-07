@@ -121,6 +121,10 @@ html {
 	font-style: italic;
 	text-decoration: none;
 }
+
+#body ul.homecontent li a b {
+	font-weight: bold;
+}
 #body ul.homecontent li a:hover {
 	font-style: normal;
 	text-decoration: underline;
