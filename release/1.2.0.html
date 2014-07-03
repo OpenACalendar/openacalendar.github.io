@@ -1,0 +1,61 @@
+---
+layout: default
+title: Release v1.2.0 DRAFT
+---
+
+<h2>Release v1.2.0, ??????</h2>
+
+<!-- p><a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/releases/tag/v1.2.0">Download</a></p -->
+
+<p>New Features:</p>
+
+<ul>
+	<li>User Notifications in Web pages. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/169">#169</a></li>
+	<li>Editing recurring events. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/37">#37</a></li>
+	<li>Events can be tagged, optional feature per site.</li>
+	<li>New Facebook importer, better Meetup importer. These are new extensions that must be enabled, see the docs. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/177">#177</a> & <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/182">#182</a></li>
+	<li>1 Event in many groups - there is now a user accesible UI for this, previously only system administrators could do this. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/34">#34</a></li>
+	<li>Can search list of events for free text like you can with groups.</li>
+	<li>Import URL History should appear in main site history. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/206">#206</a></li>
+	<li>Events now have an Ticket URL as well as an information URL.</li>
+	<li>ICAL feeds have new LOCATION and GEO fields.</li>
+	<li>Schema.org markup.</li>
+	<li>Better duplicate event detection using URLs. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/121">#121</a></li>
+	<li>Users can delete venues from normal UI. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/140">#140</a></li>
+</ul>
+
+<p>Fixes and minor points:</p>
+
+<ul>
+	<li>If user hasn't configured a file store, media options should not be available.</li>
+	<li>Specify Area when creating an importer.</li>
+	<li>ImportURLNotUsHandler can deal with ports.</li>
+	<li>/admin/ links to /admin/areas, shouldn't it only do this if feature physical events on?. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/194">#194</a></li>
+	<li>Edit venue in area, try to clear area - won't save. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/195">#195</a></li>
+	<li>List of Countries Page, add map . <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/191">#191</a></li>
+	<li>SiteRepository create method is missing some feature flags. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/193">#193</a></li>
+	<li>Breadcrumbs in system adminstrator UI. <a href="">#</a></li>
+	<li>system adminstrator; list countries for site. From this show tree of areas. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/65">#65</a></li>
+	<li>Show time since edit on history pages. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/179">#179</a></li>
+	<li>If looking at last event in sequence, and group has no further events, pop up prompt to make more?. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/136">#136</a></li>
+	<li>In sysadmin, forms to go direct to event etc of certain id. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/43">#43</a></li>
+</ul>
+
+
+
+<p>Several things have been tidyed up:</p>
+
+<ul>
+	<li>New way of loading extensions, and more options. Can add new notifications and importers.</li>
+	<li>Remove old bad help pages. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/145">#145</a></li>
+	<li>New ImportedEvent data store, imports happen to that then are turned into real events. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/178">#178</a></li>
+</ul>
+
+
+
+<p>For the future:</p>
+
+<ul>
+	<li>Start of Web API2, an Oauth like thing with apps and write options. This should currently be considered a draft feature.</li>
+	<li>Add "Approved by" flags for moderation purposes. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/53">#53</a></li>
+</ul>
