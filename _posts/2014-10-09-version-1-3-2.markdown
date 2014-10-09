@@ -1,0 +1,12 @@
+---
+layout: post
+title: Version 1.3.2 released; includes security fix!
+slug: version-1-3-2
+created: 2014-10-09 10:00:00
+---
+
+Version 1.3.2 is released, with some important bug fixs and a security fix! Details of the changes [are here](http://ican.openacalendar.org/release/1.3.2.html).
+
+To upgrade, [follow these instructions](http://docs.openacalendar.org/en/v1.3.x/serveradministrators/core/upgrading.html).
+
+
