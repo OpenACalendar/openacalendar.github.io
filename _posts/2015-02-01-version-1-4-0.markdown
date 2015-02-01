@@ -15,4 +15,6 @@ Behind the scenes, the way we store changes has been improved.
 
 To upgrade, [follow these instructions](http://docs.openacalendar.org/en/v1.4.x/serveradministrators/core/upgrading.html).
 
-2 bits of code which used to be in core were split out into seperate extensions, "Contact" and "CuratedLists". "CuratedLists" currently must be enabled and added to your config. "Contact" should be enabled and added to your config if you want to use it, but can be left if not.
+2 bits of code which used to be in core were split out into separate extensions, "Contact" and "CuratedLists". 
+"CuratedLists" currently must be enabled and added to your config. 
+"Contact" should be enabled and added to your config if you want to use it, but can be left if not.
