@@ -5,10 +5,19 @@ title: Release v1.4.0
 
 <h2>Release v1.4.0, Due early 2015</h2>
 
-<!-- <p><a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/releases/tag/v1.4.0">Download</a></p> -->
+<p>
+	<a href="http://packages.openacalendar.org/raw/openacalendar-1.4.0.zip">Download</a>
+	- <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/releases/tag/v1.4.0">Source</a>
+</p>
 
+
+<p>At version v1.4.0, 2 bits of code which used to be in core were split out into seperate extensions, "Contact" and "CuratedLists". "CuratedLists" currently must be enabled and added to your config. "Contact" should be enabled and added to your config if you want to use it, but can be left if not.</p>
+
+
+<p>Key improvements</p>
 
 <ul class="normallist">
+	<li>New UI/UX work</li>		
 	<li>Sys admin can mark Areas, Venues, Events and Tags as being duplicate. 
 		<a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/237">#237</a>
 		<a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/238">#238</a>
@@ -18,5 +27,16 @@ title: Release v1.4.0
 	<li>Users can add groups to Curated Lists <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/111">#111</a></li>
 	<li>Users can Cancel events <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/253">#253</a></li>
 	<li>Overhaul method of saving changes <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/245">#245</a></li>
+	<li>Google calendar export option to export to existing calendar <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/286">#286</a></li>
+
+</ul>
+
+<p>An incomplete list of minor improvements</p>
+
+
+<ul class="normallist">
 	<li>Sysadmin can delete and undelete Curated Lists <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/262">#262</a></li>
+	<li>Google calendar export option to export to existing calendar <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/286">#286</a></li>
+	<li>Long descriptions in upcoming events email should be truncated <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/287">#287</a></li>
+	<li>Bug fix; in notify emails, change history was not being built properly <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/commit/6a1efd0df7f8c74a3bd06cb04495cc1f3e3385b4">commit</a></li>
 </ul>

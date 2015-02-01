@@ -1,0 +1,18 @@
+---
+layout: post
+title: Version 1.4.0 released
+slug: version-1-4-0
+created: 2015-02-01 08:30:00
+---
+
+Version 1.4.0 is released! Details of the changes [are here](http://ican.openacalendar.org/release/1.4.0.html).
+
+This includes a new UI/UX to try to make it clearer to read.
+
+Also, this includes new features: cancelling events, marking data as duplicate, adding groups to curated lists, new Google calendar export option to export to existing calendar and more.
+
+Behind the scenes, the way we store changes has been improved.
+
+To upgrade, [follow these instructions](http://docs.openacalendar.org/en/v1.4.x/serveradministrators/core/upgrading.html).
+
+2 bits of code which used to be in core were split out into seperate extensions, "Contact" and "CuratedLists". "CuratedLists" currently must be enabled and added to your config. "Contact" should be enabled and added to your config if you want to use it, but can be left if not.
