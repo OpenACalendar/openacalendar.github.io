@@ -1,0 +1,14 @@
+---
+layout: post
+title: Version 1.5.0 released
+slug: version-1-5-0
+created: 2015-06-12 19:30:00
+---
+
+Version 1.5.0 is released! Details of the changes [are here](http://ican.openacalendar.org/release/1.5.0.html).
+
+To upgrade, [follow these instructions](http://docs.openacalendar.org/en/v1.5.x/serveradministrators/core/upgrading.html).
+
+
+Note we have made our own task system. The cron jobs you have running will have
+to be overhauled, but the good news is this should be the last time you will have to do that.
