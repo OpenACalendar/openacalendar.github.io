@@ -1,0 +1,14 @@
+---
+layout: post
+title: Version 1.5.1 released
+slug: version-1-5-1
+created: 2015-09-17 09:30:00
+---
+
+Version 1.5.1 is released! Details of the changes [are here](http://ican.openacalendar.org/release/1.5.1.html).
+
+To upgrade, [follow these instructions](http://docs.openacalendar.org/en/v1.5.x/serveradministrators/core/upgrading.html).
+
+This contains some crucial bug fixes for users.
+
+Also, it contains some tools to help fight spammers and an better sysadmin interface to help with that.
