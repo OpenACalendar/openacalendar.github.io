@@ -1,2 +1,2 @@
 baseurl: http://ican.openacalendar.org
-markdown: rdiscount
+markdown: kramdown
