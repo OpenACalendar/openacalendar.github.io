@@ -7,7 +7,7 @@ created: 2015-12-23 19:30:00
 
 Version 1.5.4 is released! Details of the changes [are here](http://ican.openacalendar.org/webapp/release/1.5.4.html).
 
-To upgrade, [follow these instructions](http://docs.openacalendar.org/en/v1.5.x/serveradministrators/core/upgrading.html).
+To upgrade, [follow these instructions](http://docs-superusers.openacalendar.org/en/v1.5.x/upgrading.html).
 
 This contains 2 major things;
 
