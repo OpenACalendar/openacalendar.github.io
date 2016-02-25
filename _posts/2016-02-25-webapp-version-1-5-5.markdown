@@ -7,7 +7,7 @@ created: 2016-02-25 08:30:00
 
 Version 1.5.5 is released! Details of the changes [are here](http://ican.openacalendar.org/webapp/release/1.5.5.html).
 
-To upgrade, [follow these instructions](http://docs-superusers.openacalendar.org/en/v1.5.x/upgrading.html.
+To upgrade, [follow these instructions](http://docs-superusers.openacalendar.org/en/v1.5.x/upgrading.html).
 
 This contains a new feature - optionally using CDN's for front end library loading for speed. There is a new config variable, "useLibraryCDNs". This is off by default now for backwards compatibility, but will be on by default from v1.6.x.
 
