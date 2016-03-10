@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web app version 1.5.6 released
+title: Web app version 1.5.5 withdrawn, version 1.5.6 and 1.6.0 released
 slug: webapp-version-1-5-6-and-1-6-0
 created: 2016-03-10 09:30:00
 ---
