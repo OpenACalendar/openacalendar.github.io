@@ -9,6 +9,6 @@ We are [at RESTfest](https://github.com/RESTFest/2016-Edinburgh/wiki)! Today at 
 
   *  A Vagrant box for PHP7
   *  Our first front end test! It's really simple, but it works and there is a Vagrant box for running these tests.
-  *  Some UI stuff around filters
+  *  Some UI stuff around filters.
 
-We also had some great conversations and got some great feedback - thanks to everyone today!
+We also had some great conversations and got some great feedback - thanks to everyone involved!
