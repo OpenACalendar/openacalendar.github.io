@@ -95,7 +95,7 @@ html {
 	color: black;
 }
 
-#body ul.normallist li {
+#body ul.normallist li, #body .postbody ul li {
 	list-style-type: circle;
 	margin: 4px 4px 4px 20px;
 }
@@ -189,5 +189,15 @@ table.releases th{
 table.releases td{
 	border: 1px black dashed;
 	padding: 3px 5px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+code {
+	border: 1px solid #999;
+	padding: 1px;
+	background: #ddd;
 }
 
