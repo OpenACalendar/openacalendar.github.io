@@ -2,7 +2,7 @@
 layout: post
 title: Web App Future Requirements
 slug: future-requirements
-created: 2016-08-04 10:00:00
+created: 2016-08-21 09:00:00
 ---
 
 I've been thinking about the future direction of the project, and what that means for the hosting requirements for it. 
