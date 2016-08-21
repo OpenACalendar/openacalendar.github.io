@@ -15,7 +15,7 @@ Ideally we would go with the former (easy to host). But given the resources avai
 
 So here are things that will probably happen in the future:
 
-<strong>PHP 7 required.</strong> We would have to hike the minimum required PHP version to 5.6 soon anyway, as the latest versions of some of the libraries we use are only available for that. However, it makes sense to jump to PHP 7. This isn't so much because of any particular feature in PHP 7 (although Scalar type declarations and Return type declarations look great!) but beacuse of the increased performance available in PHP 7. While technically we could still support PHP 5.6 in that case, that does increase the amount of testing required - so we may just say PHP 7. The latest Ubuntu LTS (Xenial, 16.04) comes with PHP 7, and while it's not in the mainstream Debian stable yet there are reasonable options for backporting.
+<strong>PHP 7 required.</strong> We would have to hike the minimum required PHP version to 5.6 soon anyway, as the latest versions of some of the libraries we use are only available for that. However, it makes sense to jump to PHP 7. This isn't so much because of any particular feature in PHP 7 (although Scalar type declarations and Return type declarations look great!) but because of the increased performance available in PHP 7. While technically we could still support PHP 5.6 in that case, that does increase the amount of testing required - so we may just say PHP 7. The latest Ubuntu LTS (Xenial, 16.04) comes with PHP 7, and while it's not in the mainstream Debian stable yet there are reasonable options for backporting.
 
 (The latest Ubuntu LTS also has the advantage of coming with versions of Apache and Nginx that both support HTTP2 - another performance win!)
 
