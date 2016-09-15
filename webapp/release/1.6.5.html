@@ -3,22 +3,25 @@ layout: default
 title: Release v1.6.5
 ---
 
-<h2>Release v1.6.5, XXXXXXXX 2016</h2>
+<h2>Release v1.6.5, 15th September 2016</h2>
 
-<!--
 <p>
 	<a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/releases/tag/v1.6.5">Source &amp; Download</a>
 </p>
--->
 
 
+<p>Security:</p>
+
+<ul class="normallist">
+	<li>Importer only allows adding http or https schemes.   <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/693">#693</a></li>
+</ul>
 
 <p>Bug fixes:</p>
 
 <ul class="normallist">
-	<li>canonical for Map Time page has wrong URL  <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/674">#674</a></li>
 	<li>Area - New page - Permissions  <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/672">#672</a></li>
 	<li>Undefined variable: ar in site/controllers/VenueNewController.php  <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/678">#678</a></li>
+	<li>Create site link on front page of multi site mode needs to check permissions  <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/678">#685</a></li>
 </ul>
 
 <p>UI/UX &amp; Style:</p>
@@ -29,6 +32,8 @@ title: Release v1.6.5
 	<li>In new event wizard; in duplicate events section; highlight can edit event   <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/584">#584</a></li>
 	<li>Group page - import link  <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/654">#654</a></li>
 	<li>Event edit splash page is missing "Cancel/Delete" link <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/681">#681</a></li>
+	<li>Menus and Map Z-Index <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/676">#676</a></li>
+	<li>Date filter on Android Chrome against Map <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/599">#599</a></li>
 </ul>
 
 <p>SEO:</p>
@@ -52,4 +57,12 @@ title: Release v1.6.5
 
 <ul class="normallist">
 	<li>Remove Request Access feature properly <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/647">#647</a></li>
+</ul>
+
+
+<p>Developers:</p>
+
+<ul class="normallist">
+	<li>Fix Vagrant Boxes <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/commit/bdc8847c0b563d8d911af25dba68ad3924ab9cb4">commit</a> <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/commit/c65b069e05d83cf98a68d5f08788efc06092279b">commit</a></li>
+	<li>newExtension.php script checks for bad input <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/578">#578</a></li>
 </ul>
