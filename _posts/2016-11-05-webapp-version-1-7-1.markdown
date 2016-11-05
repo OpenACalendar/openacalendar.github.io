@@ -1,4 +1,4 @@
-1---
+---
 layout: post
 title: Web app version 1.7.1 released
 slug: webapp-version-1-7-1
