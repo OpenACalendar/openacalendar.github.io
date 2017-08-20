@@ -1,0 +1,41 @@
+---
+layout: default
+title: Release v2.0.0
+---
+
+<h2>Release v2.0.0, Aug 2017</h2>
+
+<p>
+	<a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/releases/tag/v2.0.0">Source &amp; Download</a>
+</p>
+
+<p>Note the minimum requirements have been raised to PHP 7.0!</p>
+
+<p>There have not been many functional changes - but this release upgrades a lot of the libraries we use and updates our code to accomdate that. Probably imcomplete lists are below:</p>
+
+<p>Functionality:</p>
+
+<ul class="normallist">
+	<li>Remove Reason For Closing account <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/738">#738</a></li>
+	<li>CLI script to run one particular importer now, regardless of when it was last run <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/730">#730</a></li>
+</ul>
+
+<p>UI:</p>
+
+<ul class="normallist">
+	<li>Remove username option from login form <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/734">#734</a></li>
+	<li>Relabel "Monthly" as "Calendar" <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/735">#735</a></li>
+	<li>Import UI - add more messages to try and make process clearer <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/733">#733</a></li>
+	<li>List imports on group, show status in list (eg "enabled", "disabled") <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/732">#732</a></li>
+	<li>Fixing width of pages <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/684">#684</a></li>
+	<li>Include Existing Group Search in New Event Wizard <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/719">#719</a></li>
+</ul>
+
+<p>Fixes:</p>
+
+<ul class="normallist">
+	<li>Recurring Events in an area (not venue) does not copy the area! <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/739">#739</a></li>
+	<li>pass new EventFilterParams options properly! <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/736">#736</a></li>
+	<li>Don't allow 2 importers with the same URL <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/731">#731</a></li>
+	<li>If trying to import something, and get 500 error, whole task crashes. <a href="https://github.com/OpenACalendar/OpenACalendar-Web-Core/issues/711">#711</a></li>
+</ul>
